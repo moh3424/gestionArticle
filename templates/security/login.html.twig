@@ -1,0 +1,44 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+{% include 'base/_header.html.twig' %}
+
+<section id="blog-details">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="blog-content blog-archive">
+                    <div class="blog-area">
+                        <div class="row center">
+                            <!-- Start single blog post -->
+                            <div class="col s12 m4 l4">
+                                <h1>Connexion</h1>
+                            </div>
+                            <div class="col s12 m8 l6">
+                                <div class="blog-post">
+                                    <div class="card">
+                                        <form action="{{ path('security_login') }}" method="post">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Adresse email .. " class="form-control"
+                                                    name="_username" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" placeholder="Mot de passe .. "
+                                                    class="form-control" name="_password" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-success">Connexion !</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

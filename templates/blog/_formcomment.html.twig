@@ -1,0 +1,10 @@
+{{  form_start(commentForm) }}
+
+{{ form_row(commentForm.author, {'label': "Votre nom",'attr': {'placeholder': "Votre nom ...!", 'class': "form-control"} }) }}
+
+{{ form_row(commentForm.content, {'label': "Votre Commentaire", 'attr': {'placeholder': "Votre commentaire ...!", 'class': "form-control"} }) }}
+
+
+<button type="submit" class="btn btnprimary">Commenter</button>
+
+{{  form_end(commentForm) }}

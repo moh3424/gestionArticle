@@ -1,0 +1,40 @@
+<header id="header" role="banner">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+
+                    <!-- LOGO -->
+
+                    <!-- TEXT BASED LOGO -->
+                    <a href="{{path('blog')}}" class="brand-logo">Bienvenue</a>
+
+                    <!-- Image Based Logo -->
+                    <!-- <a href="index.html" class="brand-logo"><img src="img/logo.jpeg" alt="logo img"></a>  -->
+                    <ul class="right hide-on-med-and-down custom-nav">
+                        <li><a href="{{path('blog')}}">Articles</a></li>
+                        <li class="active"><a href="{{path('blog_create')}}">Créer un article</a></li>
+                        {% if not app.user %}
+                        <li class="active"><a href="{{path('security_login')}}">Connexion</a></li>
+                        {% else %}
+                        <li class="active"><a href="{{path('security_logout')}}">Déconnexion</a></li>
+                        {% endif %}
+                    </ul>
+                    <!-- For Mobile View -->
+                    <ul id="slide-out" class="side-nav menu-scroll">
+                        <li><a href="{{path('blog')}}">Articles</a></li>
+                        <li><a href="{{path('blog_create')}}">Créer un article</a></li>
+                        <li><a href="{{path('security_login')}}">Connexion</a></li>
+                        {% if not app.user %}
+                        <li><a href="{{path('blog_create')}}">Créer un article</a></li>
+                        {% else %}
+                        <li><a href="{{path('security_logout')}}">Déconnexion</a></li>
+                        {% endif %}
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i
+                            class="mdi-navigation-menu"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

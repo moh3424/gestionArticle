@@ -1,0 +1,106 @@
+{% extends 'base/base.html.twig' %}
+
+
+{% block body %}
+{% include 'base/_header.html.twig' %}
+
+<!-- Start Portfolio -->
+<section id="portfolio">
+    <div class="portfolio-top">
+        <div class="container">
+            <div class="portfolio-top-inner">
+                <h2 class="title">Les dernières actualités à la une</h2>
+                <div class="controls">
+                    <button class="filter waves-effect waves-light btn" data-filter="all">All</button>
+                    <button class="filter waves-effect waves-light btn" data-filter=".html">Sport</button>
+                    <button class="filter waves-effect waves-light btn" data-filter=".design">Politique</button>
+                    <button class="filter waves-effect waves-light btn" data-filter=".fashion">Science</button>
+                    <button class="filter waves-effect waves-light btn" data-filter=".sante">Santé</button>
+                    <button class="filter waves-effect waves-light btn" data-filter=".musique">Musique</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-bottom">
+        <div class="container">
+            <div class="portfolio-bottom-inner">
+                <div id="portfolio-list">
+                    <div class="mix html" data-value="2">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/html/html-2.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix fashion" data-value="4">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/fashion/fashion-1.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix design" data-value="1">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/design/design-1.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix html" data-value="5">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/html/html-1.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix fashion" data-value="3">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/fashion/fashion-2.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix design" data-value="9">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/design/design-2.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix html" data-value="12">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/html/html-3.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix fashion" data-value="7">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/fashion/fashion-3.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix design" data-value="8">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/design/design-3.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix musique" data-value="6">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/design/design-3.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix sante" data-value="10">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/design/design-3.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+                    <div class="mix sante" data-value="11">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/portfolio/design/design-3.jpg') }}" alt="img">
+                            <i class="material-icons view-icon">pageview</i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
